@@ -1,15 +1,15 @@
 package com.yazid.cobacobaauth.ui.home
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.yazid.cobacobaauth.R
 import com.yazid.cobacobaauth.database.RoomDb
+import com.yazid.cobacobaauth.database.entity.Car
 import com.yazid.cobacobaauth.databinding.FragmentHomeBinding
 import com.yazid.cobacobaauth.repository.CarRepository
 import com.yazid.cobacobaauth.ui.adapter.CarAdapter

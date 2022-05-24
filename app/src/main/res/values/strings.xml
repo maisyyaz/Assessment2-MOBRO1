@@ -13,6 +13,10 @@
     <string name="add">Add</string>
     <string name="list_mobil">List Mobil</string>
     <string name="belum_ada_data_mobil">Belum ada data Mobil</string>
+    <string name="hapus">Hapus</string>
+    <string name="batal">Batal</string>
+    <string name="konfirmasi_hapus">Hapus?</string>
+    <string name="bagikan_template">Nama mobil: %1$s\nTipe: %2$s\nHarga: %3$s</string>
 
     <array name="car_type">
         <item>Minibus</item>
