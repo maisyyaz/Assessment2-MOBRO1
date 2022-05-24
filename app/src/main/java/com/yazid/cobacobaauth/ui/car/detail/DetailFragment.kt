@@ -38,6 +38,10 @@ class DetailFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        initViewModel()
+    }
+
+    private fun initViewModel() {
         viewModel.getOneCar(carId).observe(requireActivity()) {
             if (it == null) return@observe
             val carTypeArray: Array<String> = resources.getStringArray(R.array.car_type)
