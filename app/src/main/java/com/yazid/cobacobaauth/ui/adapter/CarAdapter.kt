@@ -46,7 +46,6 @@ class CarAdapter : ListAdapter<Car, CarAdapter.ViewHolder>(DIFF_CALLBACK) {
             root.setOnClickListener {
                 it.findNavController()
                     .navigate(direction)
-                Toast.makeText(root.context, car.name, Toast.LENGTH_LONG).show()
             }
         }
     }

@@ -1,4 +1,4 @@
-package com.yazid.cobacobaauth
+package com.yazid.cobacobaauth.ui.car.detail
 
 import android.os.Bundle
 import android.util.Log
@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import com.yazid.cobacobaauth.R
 import com.yazid.cobacobaauth.database.RoomDb
 import com.yazid.cobacobaauth.databinding.FragmentDetailBinding
 import com.yazid.cobacobaauth.repository.CarRepository
@@ -36,5 +37,11 @@ class DetailFragment : Fragment() {
         }
         binding = FragmentDetailBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        viewModel.getOneCar(carId).observe(viewLifecycleOwner) {
+            Log.d("tes", "id: " + it.id + ", nama mobil: " + it.name)
+        }
     }
 }

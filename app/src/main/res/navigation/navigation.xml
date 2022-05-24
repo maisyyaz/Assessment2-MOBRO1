@@ -53,7 +53,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="com.yazid.cobacobaauth.DetailFragment"
+        android:name="com.yazid.cobacobaauth.ui.car.detail.DetailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail">
         <argument
